@@ -65,6 +65,11 @@ namespace BNG {
             if (_validRigidBody && GravityEnabled) {
                 //playerRigidbody.AddRelativeForce(Gravity, ForceMode.VelocityChange);
                 //playerRigidbody.AddForce(new Vector3(0, -Gravity.y * playerRigidbody.mass, 0));
+
+                if(smoothLocomotion && smoothLocomotion.ControllerType == PlayerControllerType.Rigidbody && smoothLocomotion.GroundContacts < 1) {
+                    
+                }
+
                 playerRigidbody.AddForce(Gravity * playerRigidbody.mass);
             }
         }

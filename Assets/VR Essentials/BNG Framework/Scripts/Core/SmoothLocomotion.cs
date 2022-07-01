@@ -19,7 +19,35 @@ namespace BNG {
         public float MovementSpeed = 1.25f;
 
         [Header("Rigidbody Settings : ")]
+        [Tooltip("How much force to apply to the rigidbody when the player is grounded")]
         public float MovementForce = 500f;
+
+        [Tooltip("Maximium velocity of the player's rigidbody in X, Z. Used to constrain max speed movement.")]
+        public float MaxHorizontalVelocity = 5f;
+
+        [Tooltip("Maximium velocity of the player's rigidbody on the Y axis. Used to constrain max vertical movement, such as jumping and falling.")]
+        public float MaxVerticalVelocity = 10f;
+
+        [Tooltip("How far up from the characters feet is considered a step. Anything below this will be considered grounded.")]
+        public float StepHeight = 0.1f;
+
+        [Tooltip("Maximium angle a slope can be to be considered grounded. Negated if contact distance from the player's feet is less than StepHeight.")]
+        public float MaxSlopeAngle = 45f;
+
+        [Tooltip("Physics Material to apply to the sphere collider while moving. Use this to dynamically adjust friction and bounciness.")]
+        public PhysicMaterial MovementMaterial;
+
+        [Tooltip("Physics Material to apply to the sphere collider when no controls are being issues. Use this to slow t he player down, or allow them to slide across surfaces.")]
+        public PhysicMaterial FrictionMaterial;
+
+        [Tooltip("How much drag to apply to the player while moving")]
+        public float MovementDrag = 1f;
+
+        [Tooltip("How much drag to apply to the player while standing still. Used to slow down the player or prevent from sliding down a hill.")]
+        public float StaticDrag = 5f;
+
+        [Tooltip("How much drag to apply to the player when in the air / not grounded.")]
+        public float AirDrag = 1f;
 
         [Header("Forward Direction : ")]
         [Tooltip("(Optional) If specified, this transform's forward direction will determine the movement direction ")]
@@ -75,6 +103,7 @@ namespace BNG {
         BNGPlayerController playerController;
         CharacterController characterController;
         Rigidbody playerRigid;
+        SphereCollider playerSphere;
 
         // Left / Right
         float movementX;
@@ -112,6 +141,9 @@ namespace BNG {
         public virtual void FixedUpdate() {
             if (UpdateMovement && ControllerType == PlayerControllerType.Rigidbody) {
                 MoveRigidCharacter();
+
+                // Reset GroundContacts. This will be updated in OnCollisionStay
+                GroundContacts = 0;
             }
         }
 
@@ -135,6 +167,7 @@ namespace BNG {
                 // Rigidbody Initialization
                 if (ControllerType == PlayerControllerType.Rigidbody && playerRigid == null) {
                     playerRigid = GetComponent<Rigidbody>();
+                    playerSphere = GetComponent<SphereCollider>();
 
                     // If it is still null, then we'll need to setup the player rigid body
                     if (playerRigid == null) {
@@ -142,7 +175,8 @@ namespace BNG {
                     }
                 }
             }
-        }       
+        }
+
 
         public virtual void UpdateInputs() {
 
@@ -194,7 +228,8 @@ namespace BNG {
 
         public virtual void DoRigidBodyJump() {
 
-            if(Time.time - lastJumpTime > 0.2f) {
+            if(Time.time - lastJumpTime > 0.2f) {               
+
                 playerRigid.AddForce(new Vector3(playerRigid.velocity.x, JumpForce, playerRigid.velocity.z), ForceMode.VelocityChange);
 
                 lastJumpTime = Time.time;
@@ -311,6 +346,22 @@ namespace BNG {
                             velocityTarget.z = Mathf.Clamp(velocityTarget.z, -maxVelocityChange, maxVelocityChange);
                         }
 
+                        // Adjust physics material if applying movement or waiting to come to a stop
+                        if (moveDirection.magnitude > 0.001f) {
+                            if(playerSphere) {
+                                playerSphere.material = MovementMaterial;
+                            }
+
+                            playerRigid.drag = MovementDrag;
+                        }
+                        else {
+                            if (playerSphere) {
+                                playerSphere.material = FrictionMaterial;
+                            }
+
+                            playerRigid.drag = StaticDrag;
+                        }
+
                         // Apply movement
                         if (moveDirection.magnitude > 0.001f) {
                             playerRigid.AddForce(velocityTarget, ForceMode.VelocityChange);
@@ -318,14 +369,35 @@ namespace BNG {
                     }
                 }
                 // Air Control Movement
-                else if(AirControl) {
+                else {
 
-                    if (!recentlyJumped) {
-                        Vector3 move = (targetVelocity) * AirControlSpeed;
-                        move.y = 0;
+                    playerRigid.drag = AirDrag;
 
-                        playerRigid.AddForce(move, ForceMode.Acceleration);
+                    if (AirControl) {
+
+                        if (!recentlyJumped) {
+                            Vector3 move = (targetVelocity) * AirControlSpeed;
+                            move.y = 0;
+
+                            playerRigid.AddForce(move, ForceMode.Acceleration);
+                        }
                     }
+                }
+
+                //  Cap our min / max velocity. 
+                var adjustedVelocity = new Vector3(playerRigid.velocity.x, 0, playerRigid.velocity.z);
+                if(adjustedVelocity.magnitude > MaxHorizontalVelocity) {
+                    adjustedVelocity = Vector3.ClampMagnitude(adjustedVelocity, MaxHorizontalVelocity);
+
+                    adjustedVelocity = new Vector3(adjustedVelocity.x, playerRigid.velocity.y, adjustedVelocity.z);
+
+                    // Apply changes if there was a difference
+                    playerRigid.velocity = adjustedVelocity;
+                }
+
+                // Clamp the Y axis separately
+                if (Mathf.Abs(playerRigid.velocity.y) > MaxVerticalVelocity) {
+                    playerRigid.velocity = new Vector3(playerRigid.velocity.x, Mathf.Clamp(playerRigid.velocity.y, -MaxVerticalVelocity, MaxVerticalVelocity), playerRigid.velocity.z);
                 }
             }
         }
@@ -356,9 +428,9 @@ namespace BNG {
                     characterController.Move(motion);
                 }
             }
-            // RigidBody Movement Type moved in FIxed Update
+            // RigidBody Movement Type moved in Fixed Update
             else if (ControllerType == PlayerControllerType.Rigidbody) {
-                
+                // playerRigid.MovePosition(transform.position + motion * Time.deltaTime);
             }
 
             // Call any After Move Events
@@ -424,11 +496,6 @@ namespace BNG {
         public virtual void SetupCharacterController() {
             playerRigid = GetComponent<Rigidbody>();
 
-            // Remove any Rigidbody on our root
-            if (playerRigid != null) {
-                GameObject.Destroy(playerRigid);
-            }
-
             BNGPlayerController bng = GetComponent<BNGPlayerController>();
             if (bng) {
                 bng.DistanceFromGroundOffset = 0f;
@@ -472,9 +539,9 @@ namespace BNG {
             cc.center = new Vector3(0, 0.785f, 0);
             cc.height = 1.25f;
 
-            SphereCollider sc = gameObject.AddComponent<SphereCollider>();
-            sc.center = new Vector3(0, 0.079f, 0);
-            sc.radius = 0.08f;
+            playerSphere = gameObject.AddComponent<SphereCollider>();
+            playerSphere.center = new Vector3(0, 0.079f, 0);
+            playerSphere.radius = 0.08f;
 
             playerInitialized = true;
         }
@@ -487,17 +554,50 @@ namespace BNG {
             UpdateMovement = false;
         }
 
+        [Header("Shown for Debug : ")]
         public int GroundContacts = 0;
+        public float SurfaceAngle = 0f;
+        public float SurfaceHeight = 0f;
 
-        public virtual void OnCollisionEnter(Collision collision) {
-            if(ControllerType == PlayerControllerType.Rigidbody) {
-                // May want to check for sphere collider here, contact normals, etc. Keeping it simple for now.
-                GroundContacts++;
-            }
-        }
-        public virtual void OnCollisionExit(Collision collision) {
-            if(ControllerType == PlayerControllerType.Rigidbody) {
-                GroundContacts--;
+        //public virtual void OnCollisionEnter(Collision collision) {
+        //    if(ControllerType == PlayerControllerType.Rigidbody) {
+        //        // May want to check for sphere collider here, contact normals, etc. Keeping it simple for now.
+        //        GroundContacts++;
+        //    }
+        //}
+        //public virtual void OnCollisionExit(Collision collision) {
+        //    if(ControllerType == PlayerControllerType.Rigidbody) {
+        //        GroundContacts--;
+        //    }
+        //}
+        
+        void OnCollisionStay(Collision collisionInfo) {
+            if (ControllerType == PlayerControllerType.Rigidbody) {
+                //= collisionInfo.contacts.Length;
+
+                for (int x = 0; x < collisionInfo.contacts.Length; x++) {
+                    ContactPoint contact = collisionInfo.contacts[x];
+                    SurfaceAngle = Vector3.Angle(contact.normal, transform.up);
+                    SurfaceHeight = Mathf.Abs(contact.point.y - transform.position.y);
+
+                    // Smooth floating point out for debug
+                    if(SurfaceHeight < 0.0001) {
+                        SurfaceHeight = 0;
+                    }
+
+                    // Is this a valid contact?
+                    if(SurfaceHeight <= StepHeight) {
+                        GroundContacts++;
+                    }
+                    else if (SurfaceAngle <= MaxSlopeAngle) {
+                        GroundContacts++;
+                    }
+
+                    // Debug - draw all contact points and normals
+                    //Debug.DrawRay(contact.point, contact.normal * 10, Color.white);
+
+                    Debug.DrawLine(contact.point, transform.position);
+                }
             }
         }
     }

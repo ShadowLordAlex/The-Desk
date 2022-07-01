@@ -2263,6 +2263,37 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &4890990131988351569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9068022957816170250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 115a56ea883bb2c4f8915581bc64614a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DesiredPlayerHeight: 1
+  PlayerController: {fileID: 1448682223933534352}
+  CalibrateOnStart: 1
+  CalibrateHeightAction:
+    m_Name: Calibrate Height
+    m_Type: 1
+    m_ExpectedControlType: Button
+    m_Id: c9bdbdb6-4b6a-4a9e-89e9-6fecb71b3f83
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: dd449dc8-b519-403c-92a0-a75121c2002a
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Calibrate Height
+      m_Flags: 0
 --- !u!1001 &1467347146531289082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3194,6 +3225,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5224456950185226269}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9068022957816170250 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3844078741364160279, guid: dc03a465cabc90746a8ab420688757d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 5224456950185226269}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1448682223933534352 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6672715225275777165, guid: dc03a465cabc90746a8ab420688757d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 5224456950185226269}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9068022957816170250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4688ae0e7d3f7c7498dd85852dfd2622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5862611843022706526
 PrefabInstance:
   m_ObjectHideFlags: 0

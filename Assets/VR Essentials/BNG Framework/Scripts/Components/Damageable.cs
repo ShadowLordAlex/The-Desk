@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Events;
 #if INVECTOR_BASIC || INVECTOR_AI_TEMPLATE
@@ -98,7 +97,6 @@ namespace BNG {
         public virtual void DealDamage(float damageAmount, Vector3? hitPosition = null, Vector3? hitNormal = null, bool reactToHit = true, GameObject sender = null, GameObject receiver = null) {
 
             if (destroyed) {
-                
                 return;
             }
 
@@ -119,8 +117,7 @@ namespace BNG {
             }
 #endif
 
-            if (Health <= 0)
-            {
+            if (Health <= 0) {
                 DestroyThis();
             }
         }

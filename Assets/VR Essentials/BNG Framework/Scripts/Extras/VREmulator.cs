@@ -11,6 +11,12 @@ namespace BNG {
         [Tooltip("Use Emulator if true and HMDIsActive is false")]
         public bool EmulatorEnabled = true;
 
+        [Tooltip("Set to false if you want to use in standalone builds as well as the editor")]
+        public bool EditorOnly = true;
+
+        [Tooltip("If true the game window must have focus for the emulator to be active")]
+        public bool RequireGameFocus = true;
+
         [Header("Input : ")]
         [SerializeField]
         [Tooltip("Action set used specifically to mimic or supplement a vr setup")]
@@ -29,6 +35,12 @@ namespace BNG {
 
         [Tooltip("Unity Input Action used to move the player down")]
         public InputActionReference PlayerDownAction;
+
+        [Tooltip("Minimum height in meters the player can shrink to when using the PlayerDownAction")]
+        public float MinPlayerHeight = 0.2f;
+
+        [Tooltip("Maximum height in meters the player can grow to when using the PlayerUpAction")]
+        public float MaxPlayerHeight = 5f;
 
         [Header("Head Look")]
         [Tooltip("Unity Input Action used to lock the camera in game mode to look around")]
@@ -67,6 +79,8 @@ namespace BNG {
 
         [Tooltip("Unity Input Action used to mimic having your thumb near a button")]
         public InputActionReference RightThumbNearAction;
+
+       
 
         float mouseRotationX;
         float mouseRotationY;
@@ -188,15 +202,14 @@ namespace BNG {
         public virtual bool HasRequiredFocus() {
 
             // No Focus Required
-            if(RequireGameFocus == false) {
+            if(EditorOnly == false || RequireGameFocus == false) {
                 return true;
             }
 
-            return Application.isEditor && Application.isFocused;
+            return Application.isFocused;
         }
 
         public void CheckHeadControls() {
-
 
             // Hold LockCameraAction (example : right mouse button down ) to move camera around
             if (LockCameraAction != null) {
@@ -231,9 +244,7 @@ namespace BNG {
                     Cursor.visible = true;
                 }
             }
-        }
-
-        public bool RequireGameFocus = true;
+        }        
 
         float prevVal;
         /// <summary>
@@ -296,17 +307,17 @@ namespace BNG {
         public void CheckPlayerControls() {
 
             // Require focus
-            if(RequireGameFocus && Application.isEditor && !Application.isFocused) {
+            if(EditorOnly && !Application.isEditor) {
                 return;
             }
 
             // Player Up / Down
             if(AllowUpDownControls) {
                 if (PlayerUpAction != null && PlayerUpAction.action.ReadValue<float>() == 1) {
-                    player.ElevateCameraHeight = Mathf.Clamp(player.ElevateCameraHeight + Time.deltaTime, 0.2f, 5f);
+                    player.ElevateCameraHeight = Mathf.Clamp(player.ElevateCameraHeight + Time.deltaTime, MinPlayerHeight, MaxPlayerHeight);
                 }
                 else if (PlayerDownAction != null && PlayerDownAction.action.ReadValue<float>() == 1) {
-                    player.ElevateCameraHeight = Mathf.Clamp(player.ElevateCameraHeight - Time.deltaTime, 0.2f, 5f);
+                    player.ElevateCameraHeight = Mathf.Clamp(player.ElevateCameraHeight - Time.deltaTime, MinPlayerHeight, MaxPlayerHeight);
                 }
             }
 
@@ -332,9 +343,9 @@ namespace BNG {
 
         void FixedUpdate() {
             // Player Move Forward / Back, Snap Turn
-            if (smoothLocomotion != null && smoothLocomotion.enabled == false && smoothLocomotion.ControllerType == PlayerControllerType.Rigidbody) {
-                smoothLocomotion.MoveRigidCharacter();
-            }
+            //if (smoothLocomotion != null && smoothLocomotion.enabled == false && smoothLocomotion.ControllerType == PlayerControllerType.Rigidbody) {
+            //    smoothLocomotion.MoveRigidCharacter();
+            //}
         }
 
         public virtual void UpdateControllerPositions() {

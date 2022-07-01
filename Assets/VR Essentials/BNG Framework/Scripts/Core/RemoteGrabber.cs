@@ -17,6 +17,9 @@ namespace BNG {
 
         public RemoteGrabType PhysicsCheckType = RemoteGrabType.Trigger;
 
+        [Tooltip("If PhysicsCheckType = Trigger and this is true, an additonal raycast check will occur to check for obstacles in the way")]
+        public bool TriggerRequiresRaycast = true;
+
         public float RaycastLength = 20f;
 
         public float SphereCastLength = 20f;
@@ -32,6 +35,11 @@ namespace BNG {
         void Start() {
             if(PhysicsCheckType == RemoteGrabType.Trigger && GetComponent<Collider>() == null) {
                 Debug.LogWarning("Remote Grabber set to 'Trigger', but no Trigger Collider was found. You may need to add a collider, or switch to a different physics check type.");
+            }
+
+            // Add a raycast check if we're using a trigger type. Trigger types don't check collision.
+            if (PhysicsCheckType == RemoteGrabType.Trigger && TriggerRequiresRaycast && ParentGrabber != null) {
+                ParentGrabber.RaycastRemoteGrabbables = true;
             }
         }
 
