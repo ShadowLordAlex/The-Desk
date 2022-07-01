@@ -5540,8 +5540,16 @@ MonoBehaviour:
   waves:
   - name: Test
     Enemy: {fileID: 5510625765277809884, guid: 9f89fd188b37b3e4880b87fcd800cf6c, type: 3}
-    count: 1
-    rate: 0
+    count: 3
+    rate: 1
+  - name: Why
+    Enemy: {fileID: 5510625765277809884, guid: 9f89fd188b37b3e4880b87fcd800cf6c, type: 3}
+    count: 5
+    rate: 1
+  - name: Why2
+    Enemy: {fileID: 5510625765277809884, guid: 9f89fd188b37b3e4880b87fcd800cf6c, type: 3}
+    count: 10
+    rate: 1
   spawnPoints:
   - {fileID: 806143804}
   - {fileID: 732178581}
@@ -5551,7 +5559,7 @@ MonoBehaviour:
   - {fileID: 1530681731}
   - {fileID: 1007258893}
   timeBetweenWaves: 5
-  waveCountDown: 0
+  waveCountDown: 4
 --- !u!114 &1121821589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5594,7 +5602,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121821587}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5644,7 +5652,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1121821587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.4624, y: 1.032, z: 4.532}
+  m_LocalPosition: {x: 1.48, y: 1.1, z: 4.532}
   m_LocalScale: {x: 2.5208693, y: 0.9303, z: 2.0641}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16043,7 +16051,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2120263753}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.27, y: 38.554, z: -29.614552}
+  m_LocalPosition: {x: 35.27, y: 38.488, z: -29.614552}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 947949460}
