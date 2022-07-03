@@ -28,9 +28,12 @@ public class LevelManager : MonoBehaviour
         Debug.Log(hitchance);
         if (hitchance >= hitTreshold)
         {
-            Debug.Log("That hurts");
-            Destroy(Healthbar[health-1]);
-            health--;
+            if (outOfCover)
+            {
+                Debug.Log("That hurts");
+                Destroy(Healthbar[health - 1]);
+                health--;
+            }
         }
     }
 
