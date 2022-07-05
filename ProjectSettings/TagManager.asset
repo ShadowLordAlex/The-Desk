@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - MovePoint
+  - AmmoSmall
   layers:
   - Default
   - TransparentFX

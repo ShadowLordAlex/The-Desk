@@ -21,6 +21,7 @@ public class EnemyAI : MonoBehaviour
     public GameObject player;
     public int RotationSpeed = 5;
     public LevelManager LevelManager;
+    public int enemyCase = 0;
     
     //Player damage valuables
     public float maxHitChance = 100;
@@ -132,5 +133,6 @@ public class EnemyAI : MonoBehaviour
     private void OnDestroy()
     {
         LevelManager.KillScore();
+        LevelManager.AddMoney(enemyCase);
     }
 }
