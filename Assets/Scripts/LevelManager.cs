@@ -99,8 +99,13 @@ public class LevelManager : MonoBehaviour
         // ReSharper disable once InvalidXmlDocComment
         ///List of stuff that you can buy and the price
         /// 0 = 50 = a new ammo clip
-        if (money <= 0) return;
+        if (money <= 0)
+        {
+            AudioManager.instance.Play("NoMoney");
+            return;
+        }
         
+        AudioManager.instance.Play("Buy");
         switch (spendCase)
         {
             case 0:

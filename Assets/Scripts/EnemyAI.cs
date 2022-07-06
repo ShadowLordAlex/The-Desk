@@ -14,30 +14,31 @@ public class EnemyAI : MonoBehaviour
     /// This code is meant for the project "The Desk" Feel free to use it for the other projects
     /// </summary>
     // Start is called before the first frame update
-    protected int destinationNumber;
-    public GameObject[] Points;
-    public NavMeshAgent agent;
+    [Header("====General Stats====")]
+    public int enemyCase = 0;
     public bool walking = false;
     public GameObject player;
     public int RotationSpeed = 5;
-    public LevelManager LevelManager;
-    public int enemyCase = 0;
-    
+
     //Player damage valuables
+    [Header("====WeaponStats====")]
     public float maxHitChance = 100;
-    protected bool allowedToShoot;
-    protected float shootCoolDown = 3f;
     public int enemyAmmoStart = 3;
     public int enemyAmmo;
+    protected bool allowedToShoot;
+    
+    [Header("=====Speed Stats======")]
+    public float shootCoolDown = 3f;
     public float reloadSpeed = 3f;
     protected bool alreadyShooting;
     
-    //Audio Stuff
-    public AudioSource ReloadAudioSource;
-    public AudioSource ShootAudioClip;
-
+    //other
+    [HideInInspector]
+    public GameObject[] Points;
+    public NavMeshAgent agent;
+    public LevelManager LevelManager;
+    protected int destinationNumber;
     
-
     enum EnemyState
     {
         SPAWNED,
@@ -47,7 +48,7 @@ public class EnemyAI : MonoBehaviour
         
     }
 
-    //Press enter to make the player go to a random spot given in the list
+
     void Start()
     {
         Points = GameObject.FindGameObjectsWithTag("MovePoint");
@@ -83,6 +84,7 @@ public class EnemyAI : MonoBehaviour
         //Debug.Log("I am going to posistion " + destinationNumber);
         agent.destination = Points[destinationNumber].transform.position;
         walking = true;
+        //AudioManager.Play("SmallGun");
 
     }
 
@@ -93,17 +95,18 @@ public class EnemyAI : MonoBehaviour
         {
             if (enemyAmmo >= 1)
             {
-                ShootAudioClip.Play();
+                AudioManager.instance.Play("SmallGun");
                 enemyAmmo--;
                 Debug.Log("I Shot a bullet!");
                 double hitChance = Math.Round(Random.Range(0, maxHitChance), 1);
-                
                 LevelManager.PLayerHit(hitChance);
                 allowedToShoot = false;
                 alreadyShooting = false;
+                
             }
             else
             {
+                ReloadSound();
                 Debug.Log("Reloading");
                 Invoke(nameof(ReloadGun), reloadSpeed);
             }
@@ -118,8 +121,8 @@ public class EnemyAI : MonoBehaviour
 
     protected void ReloadGun()
     {
+        AudioManager.instance.Play("ReloadDone");
         Debug.Log("Reloaded the Ammo");
-        ReloadAudioSource.Play();
         enemyAmmo = enemyAmmoStart;
         alreadyShooting = false;
     }
@@ -135,4 +138,13 @@ public class EnemyAI : MonoBehaviour
         LevelManager.KillScore();
         LevelManager.AddMoney(enemyCase);
     }
+
+    public void ReloadSound()
+    {
+        int audioNumber = Random.Range(1, 3);
+        AudioManager.instance.Play("Reload" + audioNumber);
+        Debug.Log("Reload" + audioNumber);
+
+    }
+    
 }

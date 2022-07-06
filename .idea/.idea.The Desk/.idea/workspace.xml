@@ -11,11 +11,27 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Sound.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TestingScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SoundVault.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AmmoCreator.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/AmmoCreator.cs" />
+<<<<<<< 8ecfaa179c6a201f3ee0dec10ef9500e4312a020
+=======
+      <option value="$PROJECT_DIR$/Assets/RefundChecker.cs" />
+      <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/SoundVault.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TestingScript.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Sound.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
+>>>>>>> Added an Audio Manager
     </changedPaths>
   </component>
   <component name="ProjectId" id="2BWqfAPImv5jpR8Z5bwDfRs6wrf" />
@@ -59,7 +75,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657032294090</updated>
+<<<<<<< 8ecfaa179c6a201f3ee0dec10ef9500e4312a020
       <workItem from="1657032311147" duration="1387000" />
+=======
+      <workItem from="1657032311147" duration="16242000" />
+>>>>>>> Added an Audio Manager
     </task>
     <servers />
   </component>
