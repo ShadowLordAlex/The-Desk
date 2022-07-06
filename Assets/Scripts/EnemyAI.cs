@@ -19,7 +19,8 @@ public class EnemyAI : MonoBehaviour
     public bool walking = false;
     public GameObject player;
     public int RotationSpeed = 5;
-
+    public GameObject[] Points;
+    
     //Player damage valuables
     [Header("====WeaponStats====")]
     public float maxHitChance = 100;
@@ -32,9 +33,7 @@ public class EnemyAI : MonoBehaviour
     public float reloadSpeed = 3f;
     protected bool alreadyShooting;
     
-    //other
-    [HideInInspector]
-    public GameObject[] Points;
+    
     public NavMeshAgent agent;
     public LevelManager LevelManager;
     protected int destinationNumber;
