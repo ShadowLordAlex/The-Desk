@@ -1,0 +1,150 @@
+fileFormatVersion: 2
+guid: 076e230896d958d4d97cb80366f9c874
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: group360
+    100002: group577
+    100004: pCube1122
+    100006: pCube1123
+    100008: pCube1124
+    100010: pCube1125
+    100012: pCube1126
+    100014: pCube1127
+    100016: pCube1128
+    100018: pCube1129
+    100020: pCube1130
+    100022: pCube1131
+    100024: //RootNode
+    100026: verrerie:group186
+    400000: group360
+    400002: group577
+    400004: pCube1122
+    400006: pCube1123
+    400008: pCube1124
+    400010: pCube1125
+    400012: pCube1126
+    400014: pCube1127
+    400016: pCube1128
+    400018: pCube1129
+    400020: pCube1130
+    400022: pCube1131
+    400024: //RootNode
+    400026: verrerie:group186
+    2100000: ZL5_assiette_blanc
+    2300000: pCube1122
+    2300002: pCube1123
+    2300004: pCube1124
+    2300006: pCube1125
+    2300008: pCube1126
+    2300010: pCube1127
+    2300012: pCube1128
+    2300014: pCube1129
+    2300016: pCube1130
+    2300018: pCube1131
+    3300000: pCube1122
+    3300002: pCube1123
+    3300004: pCube1124
+    3300006: pCube1125
+    3300008: pCube1126
+    3300010: pCube1127
+    3300012: pCube1128
+    3300014: pCube1129
+    3300016: pCube1130
+    3300018: pCube1131
+    4300000: pCube1131
+    4300002: pCube1130
+    4300004: pCube1129
+    4300006: pCube1126
+    4300008: pCube1123
+    4300010: pCube1122
+    4300012: pCube1124
+    4300014: pCube1128
+    4300016: pCube1127
+    4300018: pCube1125
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: 5a8bbb3d0a9b4174fa9498d0af427765
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: group119
+    100002: group120
+    100004: group349
+    100006: //RootNode
+    100008: salle_de_jeu:group175
+    100010: salle_de_jeu:pCube960
+    100012: salle_de_jeu:pCube961
+    100014: salle_de_jeu:pCube962
+    100016: salle_de_jeu:pCube963
+    100018: salle_de_jeu:pCube964
+    100020: salle_de_jeu:pCube965
+    100022: salle_de_jeu:pCube966
+    100024: salle_de_jeu:pCube967
+    100026: salle_de_jeu:pCube968
+    100028: salle_de_jeu:pCylinder221
+    100030: salle_de_jeu:pCylinder222
+    400000: group119
+    400002: group120
+    400004: group349
+    400006: //RootNode
+    400008: salle_de_jeu:group175
+    400010: salle_de_jeu:pCube960
+    400012: salle_de_jeu:pCube961
+    400014: salle_de_jeu:pCube962
+    400016: salle_de_jeu:pCube963
+    400018: salle_de_jeu:pCube964
+    400020: salle_de_jeu:pCube965
+    400022: salle_de_jeu:pCube966
+    400024: salle_de_jeu:pCube967
+    400026: salle_de_jeu:pCube968
+    400028: salle_de_jeu:pCylinder221
+    400030: salle_de_jeu:pCylinder222
+    2100000: ZL20_voyant2
+    2100002: ZL17_gris_fonce
+    2100004: ZL19_voyant1
+    2100006: ZL13_noir_blinn
+    2300000: salle_de_jeu:pCube960
+    2300002: salle_de_jeu:pCube961
+    2300004: salle_de_jeu:pCube962
+    2300006: salle_de_jeu:pCube963
+    2300008: salle_de_jeu:pCube964
+    2300010: salle_de_jeu:pCube965
+    2300012: salle_de_jeu:pCube966
+    2300014: salle_de_jeu:pCube967
+    2300016: salle_de_jeu:pCube968
+    2300018: salle_de_jeu:pCylinder221
+    2300020: salle_de_jeu:pCylinder222
+    3300000: salle_de_jeu:pCube960
+    3300002: salle_de_jeu:pCube961
+    3300004: salle_de_jeu:pCube962
+    3300006: salle_de_jeu:pCube963
+    3300008: salle_de_jeu:pCube964
+    3300010: salle_de_jeu:pCube965
+    3300012: salle_de_jeu:pCube966
+    3300014: salle_de_jeu:pCube967
+    3300016: salle_de_jeu:pCube968
+    3300018: salle_de_jeu:pCylinder221
+    3300020: salle_de_jeu:pCylinder222
+    4300000: salle_de_jeu:pCylinder221
+    4300002: salle_de_jeu:pCube963
+    4300004: salle_de_jeu:pCube962
+    4300006: salle_de_jeu:pCube968
+    4300008: salle_de_jeu:pCube967
+    4300010: salle_de_jeu:pCube966
+    4300012: salle_de_jeu:pCylinder222
+    4300014: salle_de_jeu:pCube964
+    4300016: salle_de_jeu:pCube960
+    4300018: salle_de_jeu:pCube961
+    4300020: salle_de_jeu:pCube965
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: d706e3f393e00c34dad473c7b4f9be87
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: chambre_items:group101
+    100002: chambre_items:group102
+    100004: chambre_items:group103
+    100006: chambre_items:group93
+    100008: chambre_items:group95
+    100010: group124
+    100012: group399
+    100014: group415
+    100016: pCube663
+    100018: pCube664
+    100020: pCube665
+    100022: pCube667
+    100024: pCube669
+    100026: pCylinder185
+    100028: pCylinder187
+    100030: pCylinder190
+    100032: pCylinder192
+    100034: pSphere50
+    100036: pSphere51
+    100038: //RootNode
+    400000: chambre_items:group101
+    400002: chambre_items:group102
+    400004: chambre_items:group103
+    400006: chambre_items:group93
+    400008: chambre_items:group95
+    400010: group124
+    400012: group399
+    400014: group415
+    400016: pCube663
+    400018: pCube664
+    400020: pCube665
+    400022: pCube667
+    400024: pCube669
+    400026: pCylinder185
+    400028: pCylinder187
+    400030: pCylinder190
+    400032: pCylinder192
+    400034: pSphere50
+    400036: pSphere51
+    400038: //RootNode
+    2100000: ZL1_tapis_brun
+    2100002: ZL13_noir_blinn
+    2100004: lambert264
+    2300000: pCube663
+    2300002: pCube664
+    2300004: pCube665
+    2300006: pCube667
+    2300008: pCube669
+    2300010: pCylinder185
+    2300012: pCylinder187
+    2300014: pCylinder190
+    2300016: pCylinder192
+    2300018: pSphere50
+    2300020: pSphere51
+    3300000: pCube663
+    3300002: pCube664
+    3300004: pCube665
+    3300006: pCube667
+    3300008: pCube669
+    3300010: pCylinder185
+    3300012: pCylinder187
+    3300014: pCylinder190
+    3300016: pCylinder192
+    3300018: pSphere50
+    3300020: pSphere51
+    4300000: pCube669
+    4300002: pCube663
+    4300004: pSphere51
+    4300006: pCube664
+    4300008: pCylinder192
+    4300010: pCylinder190
+    4300012: pSphere50
+    4300014: pCube665
+    4300016: pCylinder187
+    4300018: pCylinder185
+    4300020: pCube667
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,161 @@
+fileFormatVersion: 2
+guid: 373c0cfe4327f544ea4b6b1174b9b71c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: pCube1929
+    100002: pCube1930
+    100004: pCube1931
+    100006: pCube1932
+    100008: pCube1933
+    100010: pCube1934
+    100012: pCube1935
+    100014: pCube1936
+    100016: pCube1937
+    100018: pCube1938
+    100020: pCube1939
+    100022: pCylinder730
+    100024: pCylinder731
+    100026: //RootNode
+    400000: pCube1929
+    400002: pCube1930
+    400004: pCube1931
+    400006: pCube1932
+    400008: pCube1933
+    400010: pCube1934
+    400012: pCube1935
+    400014: pCube1936
+    400016: pCube1937
+    400018: pCube1938
+    400020: pCube1939
+    400022: pCylinder730
+    400024: pCylinder731
+    400026: //RootNode
+    2100000: ZL37_vert_plante
+    2100002: ZL6_table_basse_brun
+    2100004: ZL35_brun_fonce_blinn
+    2300000: pCube1929
+    2300002: pCube1930
+    2300004: pCube1931
+    2300006: pCube1932
+    2300008: pCube1933
+    2300010: pCube1934
+    2300012: pCube1935
+    2300014: pCube1936
+    2300016: pCube1937
+    2300018: pCube1938
+    2300020: pCube1939
+    2300022: pCylinder730
+    2300024: pCylinder731
+    3300000: pCube1929
+    3300002: pCube1930
+    3300004: pCube1931
+    3300006: pCube1932
+    3300008: pCube1933
+    3300010: pCube1934
+    3300012: pCube1935
+    3300014: pCube1936
+    3300016: pCube1937
+    3300018: pCube1938
+    3300020: pCube1939
+    3300022: pCylinder730
+    3300024: pCylinder731
+    4300000: pCube1939
+    4300002: pCube1938
+    4300004: pCube1937
+    4300006: pCube1936
+    4300008: pCube1935
+    4300010: pCylinder731
+    4300012: pCylinder730
+    4300014: pCube1934
+    4300016: pCube1933
+    4300018: pCube1932
+    4300020: pCube1931
+    4300022: pCube1930
+    4300024: pCube1929
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
