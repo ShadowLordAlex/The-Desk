@@ -8,17 +8,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="AmmoCreator.cs" t="Include" />
-        <e p="AssetPacks" t="Include">
-          <e p="[ULTRA PACK] 1000+ Furnitures, Household Objects and Decorative Pieces" t="Include">
-            <e p="CameraController.cs" t="Include" />
-          </e>
-        </e>
         <e p="GameManager.cs" t="Include" />
-        <e p="Hand Painted Seamless Wood Texture" t="Include">
-          <e p="Documentation" t="Include">
-            <e p="Documentation.txt" t="Include" />
-          </e>
-        </e>
         <e p="RefundChecker.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AudioManager.cs" t="Include" />
