@@ -1,0 +1,162 @@
+fileFormatVersion: 2
+guid: 402858e2315914849b359654485c1cfe
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: chambre_items:group101
+    100002: chambre_items:group102
+    100004: chambre_items:group103
+    100006: chambre_items:group93
+    100008: chambre_items:group95
+    100010: chambre_items:pCube954
+    100012: chambre_items:pCube955
+    100014: chambre_items:pCube956
+    100016: chambre_items:pCube957
+    100018: chambre_items:pCube958
+    100020: chambre_items:pCube959
+    100022: chambre_items:pCube960
+    100024: chambre_items:pCylinder245
+    100026: chambre_items:pCylinder246
+    100028: chambre_items:pCylinder247
+    100030: group178
+    100032: group265
+    100034: group266
+    100036: //RootNode
+    400000: chambre_items:group101
+    400002: chambre_items:group102
+    400004: chambre_items:group103
+    400006: chambre_items:group93
+    400008: chambre_items:group95
+    400010: chambre_items:pCube954
+    400012: chambre_items:pCube955
+    400014: chambre_items:pCube956
+    400016: chambre_items:pCube957
+    400018: chambre_items:pCube958
+    400020: chambre_items:pCube959
+    400022: chambre_items:pCube960
+    400024: chambre_items:pCylinder245
+    400026: chambre_items:pCylinder246
+    400028: chambre_items:pCylinder247
+    400030: group178
+    400032: group265
+    400034: group266
+    400036: //RootNode
+    2100000: ZL38_cyan_lambert
+    2100002: ZL6_table_basse_brun
+    2100004: ZL5_assiette_blanc
+    2300000: chambre_items:pCube954
+    2300002: chambre_items:pCube955
+    2300004: chambre_items:pCube956
+    2300006: chambre_items:pCube957
+    2300008: chambre_items:pCube958
+    2300010: chambre_items:pCube959
+    2300012: chambre_items:pCube960
+    2300014: chambre_items:pCylinder245
+    2300016: chambre_items:pCylinder246
+    2300018: chambre_items:pCylinder247
+    3300000: chambre_items:pCube954
+    3300002: chambre_items:pCube955
+    3300004: chambre_items:pCube956
+    3300006: chambre_items:pCube957
+    3300008: chambre_items:pCube958
+    3300010: chambre_items:pCube959
+    3300012: chambre_items:pCube960
+    3300014: chambre_items:pCylinder245
+    3300016: chambre_items:pCylinder246
+    3300018: chambre_items:pCylinder247
+    4300000: chambre_items:pCylinder245
+    4300002: chambre_items:pCube960
+    4300004: chambre_items:pCylinder246
+    4300006: chambre_items:pCube956
+    4300008: chambre_items:pCube955
+    4300010: chambre_items:pCube959
+    4300012: chambre_items:pCube954
+    4300014: chambre_items:pCube958
+    4300016: chambre_items:pCylinder247
+    4300018: chambre_items:pCube957
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

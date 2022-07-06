@@ -1,0 +1,192 @@
+fileFormatVersion: 2
+guid: 0c733f2b2502b194da48256afdfb6e23
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: pCylinder809
+    100002: pCylinder810
+    100004: pCylinder811
+    100006: pCylinder812
+    100008: pCylinder813
+    100010: pCylinder814
+    100012: pCylinder815
+    100014: pCylinder816
+    100016: pCylinder817
+    100018: pCylinder818
+    100020: pCylinder819
+    100022: pCylinder820
+    100024: pCylinder821
+    100026: pCylinder828
+    100028: pCylinder829
+    100030: pCylinder830
+    100032: pPipe128
+    100034: pPipe129
+    100036: pPipe130
+    100038: //RootNode
+    400000: pCylinder809
+    400002: pCylinder810
+    400004: pCylinder811
+    400006: pCylinder812
+    400008: pCylinder813
+    400010: pCylinder814
+    400012: pCylinder815
+    400014: pCylinder816
+    400016: pCylinder817
+    400018: pCylinder818
+    400020: pCylinder819
+    400022: pCylinder820
+    400024: pCylinder821
+    400026: pCylinder828
+    400028: pCylinder829
+    400030: pCylinder830
+    400032: pPipe128
+    400034: pPipe129
+    400036: pPipe130
+    400038: //RootNode
+    2100000: ZL33_blanc_blinn
+    2100002: ZL32_noir_blinn2
+    2100004: ZL40_lampe
+    2100006: ZL18_gris_clair
+    2300000: pCylinder809
+    2300002: pCylinder810
+    2300004: pCylinder811
+    2300006: pCylinder812
+    2300008: pCylinder813
+    2300010: pCylinder814
+    2300012: pCylinder815
+    2300014: pCylinder816
+    2300016: pCylinder817
+    2300018: pCylinder818
+    2300020: pCylinder819
+    2300022: pCylinder820
+    2300024: pCylinder821
+    2300026: pCylinder828
+    2300028: pCylinder829
+    2300030: pCylinder830
+    2300032: pPipe128
+    2300034: pPipe129
+    2300036: pPipe130
+    3300000: pCylinder809
+    3300002: pCylinder810
+    3300004: pCylinder811
+    3300006: pCylinder812
+    3300008: pCylinder813
+    3300010: pCylinder814
+    3300012: pCylinder815
+    3300014: pCylinder816
+    3300016: pCylinder817
+    3300018: pCylinder818
+    3300020: pCylinder819
+    3300022: pCylinder820
+    3300024: pCylinder821
+    3300026: pCylinder828
+    3300028: pCylinder829
+    3300030: pCylinder830
+    3300032: pPipe128
+    3300034: pPipe129
+    3300036: pPipe130
+    4300000: pPipe128
+    4300002: pPipe130
+    4300004: pPipe129
+    4300006: pCylinder830
+    4300008: pCylinder829
+    4300010: pCylinder828
+    4300012: pCylinder821
+    4300014: pCylinder817
+    4300016: pCylinder816
+    4300018: pCylinder820
+    4300020: pCylinder819
+    4300022: pCylinder818
+    4300024: pCylinder815
+    4300026: pCylinder814
+    4300028: pCylinder813
+    4300030: pCylinder810
+    4300032: pCylinder809
+    4300034: pCylinder812
+    4300036: pCylinder811
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
