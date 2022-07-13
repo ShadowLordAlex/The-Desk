@@ -94,7 +94,7 @@ public class EnemyAI : MonoBehaviour
         {
             if (enemyAmmo >= 1)
             {
-                AudioManager.instance.Play("SmallGun");
+                AudioManager.instance.Play("ShootSmall");
                 enemyAmmo--;
                 Debug.Log("I Shot a bullet!");
                 double hitChance = Math.Round(Random.Range(0, maxHitChance), 1);
